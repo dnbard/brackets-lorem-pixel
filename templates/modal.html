@@ -1,0 +1,54 @@
+<div class="ext_lorempixel modal">
+    <div class="modal-header">
+        <h1 class="dialog-title">Lorem pixel</h1>
+    </div>
+    <div class="modal-body">
+        <div>
+            <span class="grid-left">Width</span>
+            <input type="range" min="1" max="1920" data-bind="value: width">
+            <input class="size" data-bind="value: width" />
+        </div>
+        <div>
+            <span class="grid-left">Height</span>
+            <input type="range" name="points" min="1" max="1080" data-bind="value: height">
+            <input class="size"  data-bind="value: height" />
+        </div>
+        <div>
+            <span class="grid-left">Theme</span>
+            <select class="theme" data-bind="value: theme">
+                <option value="0">None</option>
+                <option value="abstract">Abstract</option>
+                <option value="animals">Animals</option>
+                <option value="business">Business</option>
+                <option value="cats">Cats</option>
+                <option value="city">City</option>
+                <option value="fashion">Fashion</option>
+                <option value="food">Food</option>
+                <option value="nature">Nature</option>
+                <option value="nightlife">Nightlife</option>
+                <option value="people">People</option>
+                <option value="sports">Sports</option>
+                <option value="transport">Transport</option>
+                <option value="technics">Technics</option>
+            </select>
+        </div>
+        <div>
+            <span class="grid-left">Grayscale</span>
+            <input data-bind="checked: grayscale" type="checkbox"/>
+        </div>
+        <div>
+            <span class="grid-left">Url</span>
+            <input class="url" data-bind="value: url, click: select" readonly="readonly"/>
+        </div>
+        <div style="display: none;">
+            <button class="dialog-button btn" data-bind="click: onUrlCopy">Copy url to clipboard</button>
+            <button class="dialog-button btn" data-bind="click: onFileSave">Save current image to disk</button>
+        </div>
+        <div class="preview-box"></div>
+    </div>
+    <div class="modal-footer">
+        <button class="dialog-button btn primary" data-button-id="ok">Close</button>
+        <button class="dialog-button btn" data-bind="click: onUrlCopy">Copy url to clipboard</button>
+        <button class="dialog-button btn" data-bind="click: onPreview">Preview</button>
+    </div>
+</div>

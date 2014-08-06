@@ -1,0 +1,55 @@
+#lorempixel_icon{
+    content: "";
+    cursor: pointer;
+}
+
+.ext_lorempixel .modal-body{
+    position: relative;
+}
+
+.ext_lorempixel input.size{
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: rgb(85, 85, 85);
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(178, 181, 181);
+}
+
+.ext_lorempixel input.url{
+    width: 320px;
+    margin-bottom: 2px;
+    color: rgb(85, 85, 85);
+    padding: 4px 6px;
+    border-radius: 4px;
+    border: 1px solid rgb(178, 181, 181);
+}
+
+.ext_lorempixel input[type="checkbox"]{
+    margin-bottom: 5px;
+}
+
+.ext_lorempixel select.theme{
+    width: 333px;
+}
+
+.grid-left{
+    width: 65px;
+    display: inline-block;
+}
+
+.ext_lorempixel .preview-box{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    width: 165px;
+    height: 130px;
+    overflow: hidden;
+}
+
+.ext_lorempixel .preview-box > img{
+    max-width: 165px;
+    max-height: 130px;
+    border-radius: 5px;
+}

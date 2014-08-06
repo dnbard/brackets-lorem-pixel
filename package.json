@@ -1,0 +1,13 @@
+{
+    "name": "dnbard.lorem-pixel",
+    "title": "Lorem Pixel",
+    "description": "Generate Placeholder Images for every case",
+    "homepage": "",
+    "version": "0.1.0",
+    "author": "Alex Bardanov",
+    "license": "MIT",
+    "engines": {
+        "brackets": ">=0.32.0"
+    },
+    "keywords": ["generate", "images"]
+}
