@@ -1,8 +1,8 @@
 {
     "name": "dnbard.lorem-pixel",
     "title": "Lorem Pixel",
-    "description": "Generate Placeholder Images for every case",
-    "homepage": "",
+    "description": "Generate placeholder Images for every case",
+    "homepage": "https://github.com/dnbard/brackets-lorem-pixel",
     "version": "0.1.0",
     "author": "Alex Bardanov",
     "license": "MIT",
