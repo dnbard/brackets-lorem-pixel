@@ -48,7 +48,7 @@ define(function(require, exports, module){
         });
         return loadPromise;
     }
-    chain(connect, loadClipboard, clipboardLoad);
+    //chain(connect, loadClipboard, clipboardLoad);
 
     function ModalViewModel(){
         this.width = ko.observable(400);
