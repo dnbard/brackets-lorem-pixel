@@ -4,6 +4,8 @@ define(function(require, exports, module){
         fs = require('../services/filesystem'),
         ExtensionUtils = brackets.getModule("utils/ExtensionUtils"),
         NodeConnection = brackets.getModule("utils/NodeConnection"),
+        DocumentManager = brackets.getModule("document/DocumentManager"),
+        EditorManager = brackets.getModule("editor/EditorManager"),
         nodeConnection = new NodeConnection();
 
     function chain() {
@@ -81,6 +83,20 @@ define(function(require, exports, module){
 
         this.onUrlCopy = _.bind(function(model, event){
             nodeConnection.domains.clipboard.callCopy(this.url());
+        }, this);
+
+        this.onUrlInsert = _.bind(function(model, event){
+            var currentDoc = DocumentManager.getCurrentDocument(),
+                editor = EditorManager.getCurrentFullEditor(),
+                pos = editor.getCursorPos(),
+                posEnd;
+
+            currentDoc.replaceRange(this.url(), pos);
+            posEnd = $.extend({}, pos);
+            posEnd.ch += this.url().length;
+
+            editor.focus();
+            editor.setSelection(pos, posEnd);
         }, this);
 
         this.onFileSave = function(){
