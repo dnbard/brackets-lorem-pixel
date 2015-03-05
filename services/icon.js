@@ -3,11 +3,11 @@ define(function(require, exports, module){
         icon = null;
 
     function init(){
-        var imagePath = config.path + 'images/icon.png';
+        var imagePath = config.path + 'images/icon.svg';
 
         icon = $('<a title="Lorem Pixel" id="lorempixel_icon"></a>');
 
-        icon.css('background', 'url(' + config.path + 'images/icon.png)');
+        icon.css('background', 'url(' + imagePath + ')');
         icon.appendTo($("#main-toolbar .buttons"));
     }
 
