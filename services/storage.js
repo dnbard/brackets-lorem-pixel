@@ -1,7 +1,7 @@
 define(function(require, exports){
     var storage,
-        _ = require('../vendor/lodash'),
-        storageKey = "ext_injectcss";
+        _ = brackets.getModule('thirdparty/lodash'),
+        storageKey = 'ext_injectcss';
 
     function init(){
         storage = localStorage.getItem(storageKey) || {};

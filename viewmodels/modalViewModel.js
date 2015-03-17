@@ -1,6 +1,6 @@
 define(function(require, exports, module){
     var ko = require('../vendor/knockout'),
-        _ = require('../vendor/lodash'),
+        _ = brackets.getModule('thirdparty/lodash'),
         fs = require('../services/filesystem'),
         ExtensionUtils = brackets.getModule("utils/ExtensionUtils"),
         NodeConnection = brackets.getModule("utils/NodeConnection"),
